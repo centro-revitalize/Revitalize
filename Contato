@@ -10,7 +10,7 @@
   <nav>
     <img src="Logo.png" alt="Logo do Centro Dia Revitalize">
     <ul>
-      <li><a href="Início">Início</a></li>
+      <li><a href="index.html">Início</a></li>
       <li><a href="Quemsomos">Quem Somos</a></li>
       <li><a href="Atividades">Atividades</a></li>
       <li><a href="Contato">Contato</a></li>
