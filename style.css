@@ -1,0 +1,52 @@
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf7f0; /* bege suave */
+  color: #4d2c1d; /* marrom escuro */
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #a9443d; /* marrom avermelhado da logo */
+  padding: 12px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #a9443d; /* igual ao menu */
+}
+
+p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  padding: 0 20px;
+}
