@@ -17,7 +17,7 @@ nav {
 }
 
 nav img {
-  height: 50px; /* Define uma altura para a logo */
+  height: 100px; /* Define uma altura para a logo */
   border-radius: 50%; /* Mantém o formato circular */
 }
 
@@ -25,12 +25,13 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
   text-align: right; /* Alinha os itens do menu à direita */
 }
 
 nav ul li {
   display: inline;
-  margin: 0 15px; /* Reduz a margem para caber melhor */
+  margin: 0 20px; /* Reduz a margem para caber melhor */
 }
 
 nav ul li a {
