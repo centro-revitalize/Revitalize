@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 </head>
 <body>
   <header>
@@ -51,13 +52,8 @@
   </p>
 
 <section class="video-section">
-  <div class="video-container meu-video">
-    <iframe 
-      src="https://www.youtube-nocookie.com/embed/lXlUw2xo-go?rel=0&modestbranding=1" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+  <div class="video-container">
+    <div data-plyr-provider="youtube" data-plyr-embed-id="lXlUw2xo-go"></div>
   </div>
 </section>
 
@@ -68,6 +64,17 @@
     <a href="https://instagram.com/revitalize.dia" target="_blank" style="color: #a9443d; text-decoration: none;">📷 Instagram</a>
   </p>
 </footer>
-  
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+<script>
+  // Inicializa o player Plyr
+  document.addEventListener('DOMContentLoaded', () => {
+    const player = new Plyr('.video-container div', {
+        fullscreen: { enabled: true },
+        controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+        youtube: { noCookie: true }
+    });
+  });
+ </script>
+
 </body>
 </html>
