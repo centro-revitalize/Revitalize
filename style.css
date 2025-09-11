@@ -227,3 +227,8 @@ footer{
   height: 100%;
 }
 
+.meu-video .ytp-title-channel-name,
+.meu-video .ytp-copy-link {
+    display: none !important;
+}
+
